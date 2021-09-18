@@ -21,14 +21,25 @@ PARTICULAR PURPOSE.  See the GNU General Public License for more details.
 // RAII wrapper for FILE, to make sure it gets closed if an error occurs.
 class File {
 public:
+	// Default constructor.
 	File() noexcept = default;
+	
+	// Explicit constructors can't be used for implicit conversion or copy-initialization.
 	explicit File(const std::string &path, bool write = false);
+	
+	// 'delete' disables the use of a method, as here with the copy constructor.
 	File(const File &) = delete;
+	
+	// '&&' indicates an r-value, a value with no memory address (e.g. '5', '(b+2)').
+	// 'noexcept' evaluates to TRUE if the expression throws no errors.
 	File(File &&other) noexcept;
+	
+	// 
 	~File() noexcept;
 	
 	// Do not allow copying the FILE pointer.
 	File &operator=(const File &) = delete;
+	
 	// Move assignment is OK though.
 	File &operator=(File &&) noexcept;
 	
