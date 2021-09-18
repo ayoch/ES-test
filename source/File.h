@@ -34,7 +34,7 @@ public:
 	// 'noexcept' evaluates to TRUE if the expression throws no errors.
 	File(File &&other) noexcept;
 	
-	// 
+	// FIXME
 	~File() noexcept;
 	
 	// Do not allow copying the FILE pointer.
@@ -43,6 +43,7 @@ public:
 	// Move assignment is OK though.
 	File &operator=(File &&) noexcept;
 	
+	// FIXME
 	operator bool() const;
 	operator FILE*() const;
 	
