@@ -106,7 +106,7 @@ bool GameWindow::Init()
 	int maxWidth = mode.w;
 	int maxHeight = mode.h;
 	if(maxWidth < minWidth || maxHeight < minHeight){
-		ExitWithError("Monitor resolution is too small!");
+		ExitWithError("Monitor resolution is too low!");
 		return false;
 	}
 	
