@@ -1,0 +1,14 @@
+Near term goals in order of priority:
+
+1) Build AI to make pilots unique and more realistic. 
+  1.1) AI pilots must observe and be limited in their observations.
+  1.2) AI pilots must make decisions in accordance to their personality. 
+  1.3) Decisions need not be brutally deterministic or hyper-realistic. 
+  1.4) Events which would affect a human pilot must affect AI pilots. AI pilots' personalities will be faceted and mutable.
+  1.5) All of this will probably entail disabling many components of the original game's AI.
+  
+2) Warp system will be scrapped and replaced with new system.
+  2.1) Jumping will only occur at gates located at a system's primary.
+  2.2) Connections among systems will periodically shift. Some systems will rarely be accessible.
+  
+Long term goals in order of priority:
